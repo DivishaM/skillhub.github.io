@@ -9,6 +9,13 @@
 
 @font-face {
     font-family: 'Raleway';
+    src: url('../fonts/Raleway-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
     src: url('../fonts/Raleway-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
@@ -22,6 +29,26 @@
     width: 90%;
 }
 
-details[open] summary span {
+details[open] summary .arrow {
     transform: translateY(-50%) rotate(180deg);
+}
+
+.tab-btn.active:hover {
+    transform: none !important;
+}
+
+/* slider css  */
+
+.testimonial-section .swiper-button-next:after,.testimonial-section .swiper-button-prev:after{
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.testimonial-section .swiper-pagination-progressbar{
+    background-color: #808080;
+}
+
+.testimonial-section .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background-color: #212121;
 }

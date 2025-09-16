@@ -13,6 +13,23 @@ tailwind.config = {
   },
 }
 
+const swiper = new Swiper(".testimonial-swiper", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination-progressbar",
+    type: "progressbar",
+  },
+  breakpoints: {
+    640: { slidesPerView: 1 },
+    1024: { slidesPerView: 2 },
+  },
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("menuBtn");
   const mobileMenu = document.getElementById("mobileMenu");
@@ -40,9 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // --- Language Dropdown handling (works for desktop + mobile) ---
-  document.querySelectorAll("details[id='languageDropdown']").forEach(dropdown => {
-    const summary = dropdown.querySelector("summary");
+  document.querySelectorAll("details#languageDropdown").forEach(dropdown => {
+    const summaryText = dropdown.querySelector(".languageText");
     const links = dropdown.querySelectorAll("a[data-lang]");
 
     links.forEach(link => {
@@ -50,11 +66,67 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         const lang = link.getAttribute("data-lang");
 
-        // Replace summary text but keep arrow
-        summary.childNodes[0].nodeValue = lang + " ";
+        // Update only the span text
+        summaryText.textContent = lang;
 
-        dropdown.removeAttribute("open"); // close dropdown
+        // Close dropdown
+        dropdown.removeAttribute("open");
       });
     });
   });
+
+
+  const tabButtons = document.querySelectorAll(".tab-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
+  const contentBox = document.getElementById("tab-content-box");
+
+function updateContentRadius(position) {
+  // Reset all top radius classes
+  contentBox.classList.remove(
+    "md:rounded-t-[30px]", "rounded-t-[16px]",
+    "md:rounded-tr-[30px]", "rounded-tr-[16px]",
+    "md:rounded-tl-[30px]", "rounded-tl-[16px]"
+  );
+
+  if (position === "first") {
+    // Round only top-right
+    contentBox.classList.add("md:rounded-tr-[30px]", "rounded-tr-[16px]");
+  } else if (position === "last") {
+    // Round only top-left
+    contentBox.classList.add("md:rounded-tl-[30px]", "rounded-tl-[16px]");
+  } else {
+    // Round both top corners
+    contentBox.classList.add("md:rounded-t-[30px]", "rounded-t-[16px]");
+  }
+}
+
+  tabButtons.forEach((btn) => {
+    const position = btn.dataset.position;
+
+    btn.addEventListener("click", () => {
+      const target = btn.dataset.tab;
+
+      // Reset all buttons
+      tabButtons.forEach((b) => {
+        b.classList.remove("bg-black", "text-white", "active");
+        b.classList.add("bg-white", "text-black");
+      });
+
+      // Activate clicked button
+      btn.classList.add("bg-black", "text-white", "active");
+      btn.classList.remove("bg-white", "text-black");
+
+      // Show relevant content
+      tabContents.forEach((c) => c.classList.add("hidden"));
+      document.getElementById(target).classList.remove("hidden");
+
+      // Update radius
+      updateContentRadius(position);
+    });
+  });
+
+  // Default: first tab active
+  tabButtons[0].classList.add("active");
+  updateContentRadius("first");
+
 });

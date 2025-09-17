@@ -132,12 +132,12 @@
                 <span class="text-secondary">SkillHub.</span>
                 Where tech means trust.
             </h2>
-            <button
-                class="bg-secondary text-black font-bold font-raleway md:text-2xl sm:text-xl text-lg rounded-[78px] md:px-[56px] px-[30px] md:py-[20px] py-[10px] transition lg:mt-[116px] sm:mt-[60px] mt-[30px] duration-300 ease-in-out  hover:scale-[1.04]"
-                data-aos="slide-up" data-aos-duration="2000">Order
-                a consultation</button>
+            <div data-aos="slide-up" data-aos-duration="2000">
+                <button
+                    class="bg-secondary text-black font-bold font-raleway md:text-2xl sm:text-xl text-lg rounded-[78px] md:px-[56px] px-[30px] md:py-[20px] py-[10px] transition lg:mt-[116px] sm:mt-[60px] mt-[30px] duration-300 ease-in-out  hover:scale-[1.04]">Order
+                    a consultation</button>
+            </div>
         </div>
-
     </section>
     <section class="sm:py-[60px] py-[40px]">
         <div class="custom-container">
@@ -193,9 +193,10 @@
             </div>
         </div>>
     </section>
-    <section>
+    <section class="pb-[60px]">
         <div class="custom-container ">
-            <h4 class="text-black font-bold font-raleway text-4xl mb-[30px]">Services</h4>
+            <h4 class="text-black font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl mb-[30px]">Services
+            </h4>
             <div>
                 <div class="w-full mx-auto">
                     <div class="flex ">
@@ -254,7 +255,8 @@
                                     <div class="lg:w-[76%]">
                                         <h6
                                             class="font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl text-black ">
-                                            AI <span class="text-secondary">&</span><br class="xl:block hidden"/> Blockchain</h6>
+                                            AI <span class="text-secondary">&</span><br class="xl:block hidden" />
+                                            Blockchain</h6>
                                         <p
                                             class="mt-[15px] lg:text-2xl sm:text-lg text-sm text-black font-medium font-raleway lg:!leading-[28px]">
                                             We build secure and scalable financial systems, from mobile banking apps to
@@ -328,13 +330,18 @@
             </div>
         </div>
     </section>
+    <!-- <section class="bg-customBlack py-[60px]">
+    </section> -->
     <section class="py-[60px] testimonial-section">
         <div class="custom-container">
-            <div class="flex items-start gap-6">
-                <div class="w-1/3">
-                    <h3 class="text-black font-bold font-raleway text-4xl mb-[20px]">Testimonials</h2>
-                        <img src="./assets/images/quotes.svg" alt="Quotes Image">
-                        <p class="text-4xl font-bold mb-[80px] text-black font-raleway w-[90%] mt-[44px]">What our
+            <div class="flex items-start gap-6 md:flex-row flex-col">
+                <div class="lg:w-1/3 md:w-1/2 w-full">
+                    <h3 class="text-black font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl mb-[20px]">
+                        Testimonials</h2>
+                        <img src="./assets/images/quotes.svg" alt="Quotes Image" class=" md:max-w-[160px] max-w-[80px]">
+                        <p
+                            class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold md:mb-[80px] mb-[36px] text-black font-raleway w-[90%] md:mt-[44px] mt-[16px]">
+                            What our
                             clients say
                             about us?</p>
                         <div class="flex items-center gap-2 w-[80%]">
@@ -350,24 +357,25 @@
                         </div>
                 </div>
 
-                <div class="w-2/3">
+                <div class="lg:w-2/3 md:w-1/2 w-full">
                     <div class="swiper testimonial-swiper">
                         <div class="swiper-wrapper">
 
                             <div class="swiper-slide">
                                 <div class="testimonial-card ">
                                     <div
-                                        class="review-content min-h-[382px] w-full pl-[20px] pt-[20px] pr-[8px] relative z-50 before:content-[''] before:absolute before:w-full before:full before:bg-[url('./assets/images/testimonial-bg.svg')] before:bg-no-repeat before:bg-contain before:top-0 before:left-0 before:right-0 before:bottom-[-80px] before:z-1">
+                                        class="review-content lg:w-full w-[90%] pl-[20px] pt-[20px] pr-[8px] relative z-50 before:content-[''] before:absolute before:w-full before:full before:bg-[url('./assets/images/testimonial-bg.svg')] before:bg-no-repeat before:bg-contain before:top-0 before:left-0 before:right-0 before:bottom-[-80px] before:z-1">
                                         <p
-                                            class="text-[22px] !leading-[26px] font-raleway text-black relative pb-3 after:content-[''] after:absolute after:w-[80%] after:h-[2px] after:bg-[#282828] after:bottom-0 after:left-0 after:rounded-lg">
+                                            class="xl:text-[22px] md:text-[16px] text-[12px] xl:leading-[26px] md:leading-[20px] leading-[16px] font-raleway text-black relative pb-3 after:content-[''] after:absolute after:w-[80%] after:h-[2px] after:bg-[#282828] after:bottom-0 after:left-0 after:rounded-lg">
                                             "SkillHub is not just a tech team - they bring smart, innovative thinking
                                             to the table."</p>
-                                        <p class="pt-4 text-[22px] !leading-[26px] font-raleway text-black max-w-[96%]">
+                                        <p
+                                            class="pt-4 xl:text-[22px] md:text-[16px] text-[12px] xl:leading-[26px] md:leading-[20px] leading-[16px] font-raleway text-black max-w-[96%]">
                                             They’ve
                                             delivered functional features ahead of schedule, combining strong
                                             execution with deep consulting. Their AI expertise and proactive mindset
                                             truly reflect a place where tech meets talent.</p>
-                                        <div class="flex gap-[8px] items-center mt-[40px]">
+                                        <div class="flex gap-[8px] items-center md:mt-[40px] mt-[20px]">
                                             <img src="./assets/images/star.svg" alt="Star Image">
                                             <img src="./assets/images/star.svg" alt="Star Image">
                                             <img src="./assets/images/star.svg" alt="Star Image">
@@ -376,7 +384,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="max-w-[250px] font-bold font-raleway text-black text-[22px] leading-[28px] mt-[40px] ml-[60px]">
+                                        class="max-w-[250px] font-bold font-raleway text-black xl:text-[22px] md:text-[16px] text-sm leading-[28px] lg:mt-[40px] mt-0 lg:ml-[60px] ml-[40px]">
                                         - James Matthews,
                                         Product Lead
                                         at NovaPay (UK)
@@ -387,17 +395,18 @@
                             <div class="swiper-slide">
                                 <div class="testimonial-card ">
                                     <div
-                                        class="review-content min-h-[382px] w-full pl-[20px] pt-[20px] pr-[8px] relative z-50 before:content-[''] before:absolute before:w-full before:full before:bg-[url('./assets/images/testimonial-bg.svg')] before:bg-no-repeat before:bg-contain before:top-0 before:left-0 before:right-0 before:bottom-[-80px] before:z-1">
+                                        class="review-content lg:w-full w-[90%] pl-[20px] pt-[20px] pr-[8px] relative z-50 before:content-[''] before:absolute before:w-full before:full before:bg-[url('./assets/images/testimonial-bg.svg')] before:bg-no-repeat before:bg-contain before:top-0 before:left-0 before:right-0 before:bottom-[-80px] before:z-1">
                                         <p
-                                            class="text-[22px] !leading-[26px] font-raleway text-black relative pb-3 after:content-[''] after:absolute after:w-[80%] after:h-[2px] after:bg-[#282828] after:bottom-0 after:left-0 after:rounded-lg">
+                                            class="xl:text-[22px] md:text-[16px] text-[12px] xl:leading-[26px] md:leading-[20px] leading-[16px] font-raleway text-black relative pb-3 after:content-[''] after:absolute after:w-[80%] after:h-[2px] after:bg-[#282828] after:bottom-0 after:left-0 after:rounded-lg">
                                             "I was impressed by how prepared and research-driven they were from day
                                             one."</p>
-                                        <p class="pt-4 text-[22px] !leading-[26px] font-raleway text-black max-w-[96%]">
+                                        <p
+                                            class="pt-4 xl:text-[22px] md:text-[16px] text-[12px] xl:leading-[26px] md:leading-[20px] leading-[16px] font-raleway text-black max-w-[96%]">
                                             They’ve
                                             SkillHub exceeded expectations with their structured planning. Everything
                                             was delivered on time and budget, making them a trusted partner in fintech.
                                         </p>
-                                        <div class="flex gap-[8px] items-center mt-[40px] ">
+                                        <div class="flex gap-[8px] items-center md:mt-[40px] mt-[20px] ">
                                             <img src="./assets/images/star.svg" alt="Star Image">
                                             <img src="./assets/images/star.svg" alt="Star Image">
                                             <img src="./assets/images/star.svg" alt="Star Image">
@@ -406,7 +415,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="max-w-[250px] font-bold font-raleway text-black text-[22px] leading-[28px] mt-[40px] ml-[60px]">
+                                        class="max-w-[250px] font-bold font-raleway text-black xl:text-[22px] md:text-[16px] text-sm leading-[28px] lg:mt-[40px] mt-0 lg:ml-[60px] ml-[40px]">
                                         - Eliza Kim, CTO at FinTrack<br />
                                         (South Korea)
                                     </div>
@@ -416,17 +425,18 @@
                             <div class="swiper-slide">
                                 <div class="testimonial-card ">
                                     <div
-                                        class="review-content min-h-[382px] w-full pl-[20px] pt-[20px] pr-[8px] relative z-50 before:content-[''] before:absolute before:w-full before:full before:bg-[url('./assets/images/testimonial-bg.svg')] before:bg-no-repeat before:bg-contain before:top-0 before:left-0 before:right-0 before:bottom-[-80px] before:z-1">
+                                        class="review-content lg:w-full w-[90%] pl-[20px] pt-[20px] pr-[8px] relative z-50 before:content-[''] before:absolute before:w-full before:full before:bg-[url('./assets/images/testimonial-bg.svg')] before:bg-no-repeat before:bg-contain before:top-0 before:left-0 before:right-0 before:bottom-[-80px] before:z-1">
                                         <p
-                                            class="text-[22px] !leading-[26px] font-raleway text-black relative pb-3 after:content-[''] after:absolute after:w-[80%] after:h-[2px] after:bg-[#282828] after:bottom-0 after:left-0 after:rounded-lg">
+                                            class="xl:text-[22px] md:text-[16px] text-[12px] xl:leading-[26px] md:leading-[20px] leading-[16px] font-raleway text-black relative pb-3 after:content-[''] after:absolute after:w-[80%] after:h-[2px] after:bg-[#282828] after:bottom-0 after:left-0 after:rounded-lg">
                                             "SkillHub is not just a tech team - they bring smart, innovative thinking
                                             to the table."</p>
-                                        <p class="pt-4 text-[22px] !leading-[26px] font-raleway text-black max-w-[96%]">
+                                        <p
+                                            class="pt-4 xl:text-[22px] md:text-[16px] text-[12px] xl:leading-[26px] md:leading-[20px] leading-[16px] font-raleway text-black max-w-[96%]">
                                             They’ve
                                             delivered functional features ahead of schedule, combining strong
                                             execution with deep consulting. Their AI expertise and proactive mindset
                                             truly reflect a place where tech meets talent.</p>
-                                        <div class="flex gap-[8px] items-center mt-[40px]">
+                                        <div class="flex gap-[8px] items-center md:mt-[40px] mt-[20px]">
                                             <img src="./assets/images/star.svg" alt="Star Image">
                                             <img src="./assets/images/star.svg" alt="Star Image">
                                             <img src="./assets/images/star.svg" alt="Star Image">
@@ -435,7 +445,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="max-w-[250px] font-bold font-raleway text-black text-[22px] leading-[28px] mt-[40px] ml-[60px]">
+                                        class="max-w-[250px] font-bold font-raleway text-black xl:text-[22px] md:text-[16px] text-sm leading-[28px] lg:mt-[40px] mt-0 lg:ml-[60px] ml-[40px]">
                                         - James Matthews,
                                         Product Lead
                                         at NovaPay (UK)
@@ -446,17 +456,18 @@
                             <div class="swiper-slide">
                                 <div class="testimonial-card ">
                                     <div
-                                        class="review-content min-h-[382px] w-full pl-[20px] pt-[20px] pr-[8px] relative z-50 before:content-[''] before:absolute before:w-full before:full before:bg-[url('./assets/images/testimonial-bg.svg')] before:bg-no-repeat before:bg-contain before:top-0 before:left-0 before:right-0 before:bottom-[-80px] before:z-1">
+                                        class="review-content lg:w-full w-[90%] pl-[20px] pt-[20px] pr-[8px] relative z-50 before:content-[''] before:absolute before:w-full before:full before:bg-[url('./assets/images/testimonial-bg.svg')] before:bg-no-repeat before:bg-contain before:top-0 before:left-0 before:right-0 before:bottom-[-80px] before:z-1">
                                         <p
-                                            class="text-[22px] !leading-[26px] font-raleway text-black relative pb-3 after:content-[''] after:absolute after:w-[80%] after:h-[2px] after:bg-[#282828] after:bottom-0 after:left-0 after:rounded-lg">
+                                            class="xl:text-[22px] md:text-[16px] text-[12px] xl:leading-[26px] md:leading-[20px] leading-[16px] font-raleway text-black relative pb-3 after:content-[''] after:absolute after:w-[80%] after:h-[2px] after:bg-[#282828] after:bottom-0 after:left-0 after:rounded-lg">
                                             "SkillHub is not just a tech team - they bring smart, innovative thinking
                                             to the table."</p>
-                                        <p class="pt-4 text-[22px] !leading-[26px] font-raleway text-black max-w-[96%]">
+                                        <p
+                                            class="pt-4 xl:text-[22px] md:text-[16px] text-[12px] xl:leading-[26px] md:leading-[20px] leading-[16px] font-raleway text-black max-w-[96%]">
                                             They’ve
                                             delivered functional features ahead of schedule, combining strong
                                             execution with deep consulting. Their AI expertise and proactive mindset
                                             truly reflect a place where tech meets talent.</p>
-                                        <div class="flex gap-[8px] items-center mt-[40px]">
+                                        <div class="flex gap-[8px] items-center md:mt-[40px] mt-[20px]">
                                             <img src="./assets/images/star.svg" alt="Star Image">
                                             <img src="./assets/images/star.svg" alt="Star Image">
                                             <img src="./assets/images/star.svg" alt="Star Image">
@@ -465,7 +476,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="max-w-[250px] font-bold font-raleway text-black text-[22px] leading-[28px] mt-[40px] ml-[60px]">
+                                        class="max-w-[250px] font-bold font-raleway text-black xl:text-[22px] md:text-[16px] text-sm leading-[28px] lg:mt-[40px] mt-0 lg:ml-[60px] ml-[40px]">
                                         - James Matthews,
                                         Product Lead
                                         at NovaPay (UK)
@@ -476,17 +487,18 @@
                             <div class="swiper-slide">
                                 <div class="testimonial-card ">
                                     <div
-                                        class="review-content min-h-[382px] w-full pl-[20px] pt-[20px] pr-[8px] relative z-50 before:content-[''] before:absolute before:w-full before:full before:bg-[url('./assets/images/testimonial-bg.svg')] before:bg-no-repeat before:bg-contain before:top-0 before:left-0 before:right-0 before:bottom-[-80px] before:z-1">
+                                        class="review-content lg:w-full w-[90%] pl-[20px] pt-[20px] pr-[8px] relative z-50 before:content-[''] before:absolute before:w-full before:full before:bg-[url('./assets/images/testimonial-bg.svg')] before:bg-no-repeat before:bg-contain before:top-0 before:left-0 before:right-0 before:bottom-[-80px] before:z-1">
                                         <p
-                                            class="text-[22px] !leading-[26px] font-raleway text-black relative pb-3 after:content-[''] after:absolute after:w-[80%] after:h-[2px] after:bg-[#282828] after:bottom-0 after:left-0 after:rounded-lg">
+                                            class="xl:text-[22px] md:text-[16px] text-[12px] xl:leading-[26px] md:leading-[20px] leading-[16px] font-raleway text-black relative pb-3 after:content-[''] after:absolute after:w-[80%] after:h-[2px] after:bg-[#282828] after:bottom-0 after:left-0 after:rounded-lg">
                                             "SkillHub is not just a tech team - they bring smart, innovative thinking
                                             to the table."</p>
-                                        <p class="pt-4 text-[22px] !leading-[26px] font-raleway text-black max-w-[96%]">
+                                        <p
+                                            class="pt-4 xl:text-[22px] md:text-[16px] text-[12px] xl:leading-[26px] md:leading-[20px] leading-[16px] font-raleway text-black max-w-[96%]">
                                             They’ve
                                             delivered functional features ahead of schedule, combining strong
                                             execution with deep consulting. Their AI expertise and proactive mindset
                                             truly reflect a place where tech meets talent.</p>
-                                        <div class="flex gap-[8px] items-center mt-[40px]">
+                                        <div class="flex gap-[8px] items-center md:mt-[40px] mt-[20px]">
                                             <img src="./assets/images/star.svg" alt="Star Image">
                                             <img src="./assets/images/star.svg" alt="Star Image">
                                             <img src="./assets/images/star.svg" alt="Star Image">
@@ -495,7 +507,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="max-w-[250px] font-bold font-raleway text-black text-[22px] leading-[28px] mt-[40px] ml-[60px]">
+                                        class="max-w-[250px] font-bold font-raleway text-black xl:text-[22px] md:text-[16px] text-sm leading-[28px] lg:mt-[40px] mt-0 lg:ml-[60px] ml-[40px]">
                                         - James Matthews,
                                         Product Lead
                                         at NovaPay (UK)
@@ -509,6 +521,134 @@
             </div>
         </div>
     </section>
+    <section class="pb-[60px]">
+        <div class="swiper video-swiper max-w-[1146px] mx-auto rounded-[20px] overflow-hidden bg-black">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide ">
+                    <div class="flex items-center justify-center h-[400px] text-white text-[100px]">
+                        VIDEO
+                    </div>
+                </div>
+                <div class="swiper-slide ">
+                    <div class="flex items-center justify-center h-[400px] text-white text-[100px]">
+                        VIDEO 2
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="bg-[url('./assets/images/contact-bg.png')] bg-cover bg-right py-[60px] border-t border-black">
+        <div class="custom-container">
+            <div class="flex-col flex md:gap-[16px] gap-[8px]">
+                <h5 class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold font-raleway  text-black text-center">
+                    Your idea deserves more than a template.</h5>
+                <p class="sm:text-lg text-base xl:text-2xl font-raleway  text-black text-center font-medium">Let it meet
+                    talent, tech, and execution!</p>
+                <p class="sm:text-lg text-base xl:text-2xl font-raleway  text-black text-center font-medium">Let’s Build
+                    Together</p>
+            </div>
+            <div
+                class="w-full bg-customBlack md:pt-[30px] py-[20px] md:px-[40px] px-[20px] md:pb-[60px] md:rounded-[40px] rounded-[24px] mt-[40px]">
+                <form class="flex flex-col md:gap-[16px] gap-[12px]">
+                    <input name="name" type="text" placeholder="Name"
+                        class="w-full bg-transparent border-b border-[#FFFFFFCC] placeholder-[#FFFFFFCC] text-white font-raleway font-medium lg:text-2xl md:text-xl sm:text-lg text-base py-[10px] focus:outline-none" />
+                    <input name="Email" type="text" placeholder="Email"
+                        class="w-full bg-transparent border-b border-[#FFFFFFCC] placeholder-[#FFFFFFCC] text-white font-raleway font-medium lg:text-2xl md:text-xl sm:text-lg text-base py-[10px] focus:outline-none" />
+                    <input name="phone" type="text" placeholder="+ 000(00)000-00-00"
+                        class="w-full bg-transparent border-b border-[#FFFFFFCC] placeholder-[#FFFFFFCC] text-white font-raleway font-medium lg:text-2xl md:text-xl sm:text-lg text-base py-[10px] focus:outline-none" />
+                    <input name="Project Description" type="text" placeholder="Project Description"
+                        class="w-full bg-transparent border-b border-[#FFFFFFCC] placeholder-[#FFFFFFCC] text-white font-raleway font-medium lg:text-2xl md:text-xl sm:text-lg text-base py-[10px] focus:outline-none" />
+                    <input name="Industry" type="text" placeholder="Industry"
+                        class="w-full bg-transparent border-b border-[#FFFFFFCC] placeholder-[#FFFFFFCC] text-white font-raleway font-medium lg:text-2xl md:text-xl sm:text-lg text-base py-[10px] focus:outline-none" />
+                    <input name="Budget" type="text" placeholder="Budget"
+                        class="w-full bg-transparent border-b border-[#FFFFFFCC] placeholder-[#FFFFFFCC] text-white font-raleway font-medium lg:text-2xl md:text-xl sm:text-lg text-base py-[10px] focus:outline-none" />
+                    <div class="py-[30px]">
+                        <label class="flex items-center gap-[40px] cursor-pointer">
+                            <input type="checkbox" class="peer hidden" />
+                            <span
+                                class="h-6 w-7 border border-gray-400 rounded-md flex items-center justify-center peer-checked:bg-white peer-checked:border-white peer-checked:text-black font-bold ">
+                                ✓
+                            </span>
+                            <span
+                                class="text-white font-raleway font-medium lg:text-2xl md:text-xl sm:text-lg text-base">Need
+                                NDA</span>
+                        </label>
+                    </div>
+                    <div class="flex justify-center">
+                        <button
+                            class="bg-secondary text-black font-bold font-raleway lg:text-2xl md:text-xl sm:text-lg text-base rounded-[78px] lg:px-[70px] md:px-[50px] px-[30px] lg:py-[20px] md:py-[16px] py-[10px] transition duration-300 ease-in-out hover:scale-[1.04] w-full max-w-[382px]">Send</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="bg-customBlack pt-[62px] pb-[78px] overflow-hidden">
+            <div class="custom-container">
+                <div class="grid grid-cols-12 xl:gap-[80px] sm:gap-[40px] gap-[20px]">
+                    <div class="lg:col-span-4  col-span-12">
+                        <div class="flex flex-col sm:gap-[30px] gap-[20px]">
+                            <h6 class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold font-raleway text-white">
+                                Contact Us</h6>
+                            <img src="./assets/images/logo-white.png" alt="Logo Image" class="max-w-[98px] h-auto">
+                            <p class="sm:text-lg text-sm xl:text-2xl text-white font-bold font-raleway">Where tech
+                                means trust.</p>
+                            <p class="sm:text-lg text-sm xl:text-2xl text-white font-bold font-raleway">We create
+                                secure, scalable solutions for businesses across the globe - from fintech startups to
+                                enterprise systems.</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 col-span-12">
+                        <div class="grid grid-cols-12 sm:gap-[40px] gap-[20px]">
+                            <div class="sm:col-span-5 col-span-12">
+                                <h6
+                                    class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold font-raleway text-white">
+                                    Expertise</h6>
+                                <ul
+                                    class="sm:mt-[30px] mt-[16px] sm:text-lg text-sm xl:text-2xl text-white font-normal font-raleway flex flex-col sm:gap-[12px] gap-[8px]">
+                                    <li><a href="#">Fintech & Banking</a></li>
+                                    <li><a href="#">AI & Blockchain</a></li>
+                                    <li><a href="#">Web & Mobile </a></li>
+                                    <li><a href="#">Development</a></li>
+                                    <li><a href="#">Product Development</a></li>
+                                </ul>
+                            </div>
+                            <div class="sm:col-span-7 col-span-12">
+                                <h6
+                                    class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold font-raleway text-white">
+                                    Information</h6>
+                                <ul
+                                    class="sm:mt-[30px] mt-[16px] sm:text-lg text-sm xl:text-2xl text-white font-normal font-raleway flex flex-col sm:gap-[12px] gap-[8px]">
+                                    <li>Location: 1/1 Ezgulik street </li>
+                                    <li>Email: <a href="#">shakhzod@skillhubapp.com </a></li>
+                                </ul>
+                            </div>
+                            <div class="col-span-12">
+                                <div class="border-t border-white sm:pt-[40px] pt-[20px]">
+                                    <div class="flex">
+                                        <div class="w-full flex gap-[20px] items-center">
+                                            <img src="./assets/images/instagram.svg" alt="instagram" />
+                                            <a href="#"
+                                                class="sm:text-lg text-sm xl:text-2xl text-white font-normal font-raleway">Instagram</a>
+                                        </div>
+                                        <div class="w-full flex gap-[20px] items-center">
+                                            <img src="./assets/images/linkedin.svg" alt="linkedin" />
+                                            <a href="#"
+                                                class="sm:text-lg text-sm xl:text-2xl text-white font-normal font-raleway">LinkedIn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/index.js"></script>

@@ -16,6 +16,7 @@ tailwind.config = {
 // aos init
  AOS.init();
 
+//  slider 
 const swiper = new Swiper(".testimonial-swiper", {
   slidesPerView: 2,
   spaceBetween: 20,
@@ -28,10 +29,27 @@ const swiper = new Swiper(".testimonial-swiper", {
     type: "progressbar",
   },
   breakpoints: {
-    640: { slidesPerView: 1 },
+    100: { slidesPerView: 1 },
+    370: { slidesPerView: 1.3 },
+    400: { slidesPerView: 1.5 },
+    460: { slidesPerView: 1.6 },
+    500: { slidesPerView: 1.8 },
+    580: { slidesPerView: 2 },
+    767: { slidesPerView: 1 },
     1024: { slidesPerView: 2 },
   },
 });
+
+const videoSwiper = new Swiper(".video-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("menuBtn");

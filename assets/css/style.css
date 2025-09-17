@@ -52,3 +52,43 @@ details[open] summary .arrow {
 .testimonial-section .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
     background-color: #212121;
 }
+
+.testimonial-section .review-content{
+    min-height: 382px;
+}
+
+.video-swiper .swiper-pagination-bullet-active{
+    background-color: #ffffff;
+}
+
+.video-swiper .swiper-pagination-bullet{
+    background-color: #ffffff;
+    height: 24px;
+    width: 24px;
+    margin: 20px 10px !important;
+}
+
+@media screen and (max-width: 767px) {
+    .testimonial-section .review-content{
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .testimonial-section .review-content::before{
+        width: 115%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .testimonial-section .custom-container{
+        width: 100%;
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+     .testimonial-section .review-content::before{
+        width: 100%;
+    }
+}

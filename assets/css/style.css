@@ -39,56 +39,61 @@ details[open] summary .arrow {
 
 /* slider css  */
 
-.testimonial-section .swiper-button-next:after,.testimonial-section .swiper-button-prev:after{
+.testimonial-section .swiper-button-next:after,
+.testimonial-section .swiper-button-prev:after {
     color: #000;
     font-size: 14px;
     font-weight: 700;
 }
 
-.testimonial-section .swiper-pagination-progressbar{
+.testimonial-section .swiper-pagination-progressbar {
     background-color: #808080;
 }
 
-.testimonial-section .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+.testimonial-section .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     background-color: #212121;
 }
 
-.testimonial-section .review-content{
+.testimonial-section .review-content {
     min-height: 382px;
 }
 
-.video-swiper .swiper-pagination-bullet-active{
+.video-swiper .swiper-pagination-bullet-active {
     background-color: #ffffff;
 }
 
-.video-swiper .swiper-pagination-bullet{
+.video-swiper .swiper-pagination-bullet {
     background-color: #ffffff;
     height: 24px;
     width: 24px;
     margin: 20px 10px !important;
 }
 
+.custom-pl {
+    padding-left: max(calc((100vw - 1200px) / 2), 5%) !important;
+}
+
 @media screen and (max-width: 767px) {
-    .testimonial-section .review-content{
+    .testimonial-section .review-content {
         min-height: 300px;
     }
 }
 
 @media screen and (max-width: 620px) {
-    .testimonial-section .review-content::before{
+    .testimonial-section .review-content::before {
         width: 115%;
     }
 }
 
 @media screen and (max-width: 620px) {
-    .testimonial-section .custom-container{
+    .testimonial-section .custom-container {
         width: 100%;
         padding-left: 5%;
     }
 }
 
 @media screen and (max-width: 370px) {
-     .testimonial-section .review-content::before{
+    .testimonial-section .review-content::before {
         width: 100%;
     }
 }

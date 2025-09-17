@@ -13,6 +13,9 @@ tailwind.config = {
   },
 }
 
+// aos init
+ AOS.init();
+
 const swiper = new Swiper(".testimonial-swiper", {
   slidesPerView: 2,
   spaceBetween: 20,

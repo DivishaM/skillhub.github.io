@@ -53,10 +53,6 @@ const videoSwiper = new Swiper(".video-swiper", {
 const awardswiper = new Swiper(".award-swiper", {
   slidesPerView: "auto",   
   spaceBetween: 10,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
   breakpoints: {
     100: { slidesPerView: 1.5 },  
     640: { slidesPerView: 2.5},   

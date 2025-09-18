@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillHub</title>
-    <link href="./assets/css/style.css" rel="stylesheet" />
     <script src="./assets/js/tailwind.min.js"></script>
-    <link rel="stylesheet" href="./assets/css/swiper.css" />
+    <link href="./assets/css/swiper.css"  rel="stylesheet"/>
     <link href="./assets/css/aos.css" rel="stylesheet">
-
+    <link href="./assets/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -26,16 +25,23 @@
 
                 <!-- Desktop Nav -->
                 <nav class="hidden lg:flex items-center gap-[20px] flex-1 justify-between ">
-                    <a href="#" class="font-bold font-raleway text-black text-lg xl:text-2xl">Main Page</a>
-                    <a href="#" class="font-bold font-raleway text-black text-lg xl:text-2xl">What We Do</a>
-                    <a href="#" class="font-bold font-raleway text-black text-lg xl:text-2xl">Company</a>
-                    <a href="#" class="font-bold font-raleway text-black text-lg xl:text-2xl">Industries</a>
-                    <a href="#" class="font-bold font-raleway text-black text-lg xl:text-2xl">Portfolio</a>
+                    <a href="#"
+                        class="font-bold font-raleway text-black text-lg xl:text-2xl relative before:block before:content-[''] before:absolute before:bottom-[-2px] before:left-0 before:w-full before:border-b-2 before:border-secondary before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100">Main
+                        Page</a>
+                    <a href="#"
+                        class="font-bold font-raleway text-black text-lg xl:text-2xl relative before:block before:content-[''] before:absolute before:bottom-[-2px] before:left-0 before:w-full before:border-b-2 before:border-secondary before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100">What
+                        We Do</a>
+                    <a href="#"
+                        class="font-bold font-raleway text-black text-lg xl:text-2xl relative before:block before:content-[''] before:absolute before:bottom-[-2px] before:left-0 before:w-full before:border-b-2 before:border-secondary before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100">Company</a>
+                    <a href="#"
+                        class="font-bold font-raleway text-black text-lg xl:text-2xl relative before:block before:content-[''] before:absolute before:bottom-[-2px] before:left-0 before:w-full before:border-b-2 before:border-secondary before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100">Industries</a>
+                    <a href="#"
+                        class="font-bold font-raleway text-black text-lg xl:text-2xl relative before:block before:content-[''] before:absolute before:bottom-[-2px] before:left-0 before:w-full before:border-b-2 before:border-secondary before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100">Portfolio</a>
 
                     <!-- Language dropdown -->
                     <details class="relative min-w-[100px]" id="languageDropdown">
                         <summary id="selectedLanguage"
-                            class="cursor-pointer list-none appearance-none font-bold font-raleway text-black text-lg xl:text-2xl inline-block pr-6 relative flex gap-[8px] items-center">
+                            class="cursor-pointer list-none appearance-none font-bold font-raleway text-black text-lg xl:text-2xl inline-block pr-6 relative flex gap-[8px] items-center relative before:block before:content-[''] before:absolute before:bottom-[-2px] before:left-0 before:w-full before:border-b-2 before:border-secondary before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100">
                             <img src="./assets/images/language.svg" alt="language" />
                             <span class="languageText">Eng</span>
                             <!-- Chevron Arrow -->
@@ -84,15 +90,15 @@
             <div class="custom-container">
                 <nav id="mobileMenu"
                     class="hidden flex flex-col gap-4 bg-white p-6 shadow-md rounded-lg mt-4 lg:hidden absolute w-[90%] z-50">
-                    <a href="#" class="font-bold font-raleway text-black sm:text-lg text-base">Main Page</a>
-                    <a href="#" class="font-bold font-raleway text-black sm:text-lg text-base">What We Do</a>
-                    <a href="#" class="font-bold font-raleway text-black sm:text-lg text-base">Company</a>
-                    <a href="#" class="font-bold font-raleway text-black sm:text-lg text-base">Industries</a>
-                    <a href="#" class="font-bold font-raleway text-black sm:text-lg text-base">Portfolio</a>
+                    <a href="#" class="font-bold font-raleway text-black sm:text-lg text-base hover:text-secondary">Main Page</a>
+                    <a href="#" class="font-bold font-raleway text-black sm:text-lg text-base hover:text-secondary">What We Do</a>
+                    <a href="#" class="font-bold font-raleway text-black sm:text-lg text-base hover:text-secondary">Company</a>
+                    <a href="#" class="font-bold font-raleway text-black sm:text-lg text-base hover:text-secondary">Industries</a>
+                    <a href="#" class="font-bold font-raleway text-black sm:text-lg text-base hover:text-secondary">Portfolio</a>
                     <details class="relative min-w-[100px]" id="languageDropdown">
                         <summary id="selectedLanguage"
-                            class="cursor-pointer list-none appearance-none font-bold font-raleway text-black sm:text-lg text-base xl:text-2xl inline-block pr-6 relative w-full">
-                            <span class="languageText">Eng</span>
+                            class="cursor-pointer list-none appearance-none font-bold font-raleway text-black sm:text-lg text-base xl:text-2xl inline-block pr-6 relative w-full hover:text-secondary">
+                            <span class="languageText ">Eng</span>
                             <!-- Chevron Arrow -->
                             <span
                                 class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none w-4 h-4 transition-transform duration-300">
@@ -195,7 +201,8 @@
     </section>
     <section class="pb-[60px]">
         <div class="custom-container ">
-            <h4 class="text-black font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl mb-[30px]">Services
+            <h4 class="text-black font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl mb-[30px]"
+                data-aos="zoom-in" data-aos-duration="1500">Services
             </h4>
             <div>
                 <div class="w-full mx-auto">
@@ -228,11 +235,11 @@
                             <div class="grid  grid-cols-12 lg:gap-[30px] gap-[16px]">
                                 <div class=" xl:col-span-4 col-span-12">
                                     <div class="lg:w-[76%]">
-                                        <h6
-                                            class="font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl text-black ">
+                                        <h6 class="font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl text-black "
+                                            data-aos="fade" data-aos-duration="1500">
                                             Fintech <span class="text-secondary">&</span> Banking</h6>
-                                        <p
-                                            class="mt-[15px] lg:text-2xl sm:text-lg text-sm text-black font-medium font-raleway lg:!leading-[28px]">
+                                        <p class="mt-[15px] lg:text-2xl sm:text-lg text-sm text-black font-medium font-raleway lg:!leading-[28px]"
+                                            data-aos="fade" data-aos-duration="1500">
                                             We build secure and scalable financial systems, from mobile banking apps to
                                             core banking infrastructure. Our services include KYC/AML integration,
                                             payment gateway implementation, and AI-powered fraud detection - tailored
@@ -253,12 +260,12 @@
                             <div class="grid grid-cols-12 gap-[30px]">
                                 <div class="xl:col-span-4 col-span-12">
                                     <div class="lg:w-[76%]">
-                                        <h6
-                                            class="font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl text-black ">
+                                        <h6 class="font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl text-black "
+                                            data-aos="fade" data-aos-duration="1500">
                                             AI <span class="text-secondary">&</span><br class="xl:block hidden" />
                                             Blockchain</h6>
-                                        <p
-                                            class="mt-[15px] lg:text-2xl sm:text-lg text-sm text-black font-medium font-raleway lg:!leading-[28px]">
+                                        <p class="mt-[15px] lg:text-2xl sm:text-lg text-sm text-black font-medium font-raleway lg:!leading-[28px]"
+                                            data-aos="fade" data-aos-duration="1500">
                                             We build secure and scalable financial systems, from mobile banking apps to
                                             core banking infrastructure. Our services include KYC/AML integration,
                                             payment gateway implementation, and AI-powered fraud detection - tailored
@@ -279,11 +286,11 @@
                             <div class="grid grid-cols-12 gap-[30px]">
                                 <div class="xl:col-span-4 col-span-12">
                                     <div class="lg:w-[76%]">
-                                        <h6
-                                            class="font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl text-black ">
+                                        <h6 class="font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl text-black "
+                                            data-aos="fade" data-aos-duration="1500">
                                             Web <span class="text-secondary">&</span> Mobile Development</h6>
-                                        <p
-                                            class="mt-[15px] lg:text-2xl sm:text-lg text-sm text-black font-medium font-raleway lg:!leading-[28px]">
+                                        <p class="mt-[15px] lg:text-2xl sm:text-lg text-sm text-black font-medium font-raleway lg:!leading-[28px]"
+                                            data-aos="fade" data-aos-duration="1500">
                                             We build secure and scalable financial systems, from mobile banking apps to
                                             core banking infrastructure. Our services include KYC/AML integration,
                                             payment gateway implementation, and AI-powered fraud detection - tailored
@@ -304,11 +311,11 @@
                             <div class="grid  grid-cols-12 lg:gap-[30px] gap-[16px]">
                                 <div class="xl:col-span-4 col-span-12">
                                     <div class="lg:w-[76%]">
-                                        <h6
-                                            class="font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl text-black ">
+                                        <h6 class="font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl text-black "
+                                            data-aos="fade" data-aos-duration="1500">
                                             Product Development</h6>
-                                        <p
-                                            class="mt-[15px] lg:text-2xl sm:text-lg text-sm text-black font-medium font-raleway lg:!leading-[28px]">
+                                        <p class="mt-[15px] lg:text-2xl sm:text-lg text-sm text-black font-medium font-raleway lg:!leading-[28px]"
+                                            data-aos="fade" data-aos-duration="1500">
                                             We build secure and scalable financial systems, from mobile banking apps to
                                             core banking infrastructure. Our services include KYC/AML integration,
                                             payment gateway implementation, and AI-powered fraud detection - tailored
@@ -330,62 +337,80 @@
             </div>
         </div>
     </section>
-    <section class="bg-customBlack md:py-[60px] py-[40px]">
+    <section class="bg-customBlack md:py-[60px] py-[40px] overflow-x-hidden">
         <div class="custom-container">
-             <h3 class="text-white font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl md:mb-[40px] mb-[20px]">
-                        Awards</h3>
+            <h3 class="text-white font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl md:mb-[40px] mb-[20px] "
+                data-aos="zoom-in" data-aos-duration="1500">
+                Awards</h3>
         </div>
-        <div class="award-swiper swiper custom-pl">
-            <div class="swiper-wrapper ">
-                <div class="swiper-slide"><img src="./assets/images/award1.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award2.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award3.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award4.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award5.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award6.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award7.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award8.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award9.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award10.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award11.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award12.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award13.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award14.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award15.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award16.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award17.png" alt="award"/></div>
-                <div class="swiper-slide"><img src="./assets/images/award18.png" alt="award"/></div>
+        <div class="award-swiper swiper custom-pl" data-aos="fade-left" data-aos-duration="1500">
+            <div class="swiper-wrapper flex items-end">
+                <div class="swiper-slide"><img src="./assets/images/award1.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award2.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award3.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award4.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award5.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award6.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award7.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award8.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award9.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award10.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award11.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award12.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award13.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award14.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award15.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award16.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award17.png" alt="award" class="rounded-[8px]" />
+                </div>
+                <div class="swiper-slide"><img src="./assets/images/award18.png" alt="award" class="rounded-[8px]" />
+                </div>
             </div>
 
         </div>
     </section>
-
     <section class="py-[60px] testimonial-section">
         <div class="custom-container">
             <div class="flex items-start gap-6 md:flex-row flex-col">
-                <div class="lg:w-1/3 md:w-1/2 w-full">
+                <div class="lg:w-1/3 md:w-1/2 w-full" data-aos="fade-right" data-aos-duration="1500">
                     <h3 class="text-black font-bold font-raleway lg:text-4xl md:text-3xl sm:text-2xl text-xl mb-[20px]">
                         Testimonials</h3>
-                        <img src="./assets/images/quotes.svg" alt="Quotes Image" class=" md:max-w-[160px] max-w-[80px]">
-                        <p
-                            class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold md:mb-[80px] mb-[36px] text-black font-raleway w-[90%] md:mt-[44px] mt-[16px]">
-                            What our
-                            clients say
-                            about us?</p>
-                        <div class="flex items-center gap-2 w-[80%]">
-                            <div
-                                class="swiper-button-prev !static !w-[24px] !h-[24px] rounded-full flex items-center justify-center cursor-pointer">
-                            </div>
-                            <div class="flex-1 h-[2px]  relative mb-[24px]">
-                                <div class="swiper-pagination-progressbar absolute top-0 left-0 h-[2px] "></div>
-                            </div>
-                            <div
-                                class="swiper-button-next !static !w-[24px] !h-[24px]  rounded-full flex items-center justify-center cursor-pointer">
-                            </div>
+                    <img src="./assets/images/quotes.svg" alt="Quotes Image" class=" md:max-w-[160px] max-w-[80px]">
+                    <p
+                        class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold md:mb-[80px] mb-[36px] text-black font-raleway w-[90%] md:mt-[44px] mt-[16px]">
+                        What our
+                        clients say
+                        about us?</p>
+                    <div class="flex items-center gap-2 w-[80%]">
+                        <div
+                            class="swiper-button-prev !static !w-[24px] !h-[24px] rounded-full flex items-center justify-center cursor-pointer">
                         </div>
+                        <div class="flex-1 h-[2px]  relative mb-[24px]">
+                            <div class="swiper-pagination-progressbar absolute top-0 left-0 h-[2px] "></div>
+                        </div>
+                        <div
+                            class="swiper-button-next !static !w-[24px] !h-[24px]  rounded-full flex items-center justify-center cursor-pointer">
+                        </div>
+                    </div>
                 </div>
 
-                <div class="lg:w-2/3 md:w-1/2 w-full">
+                <div class="lg:w-2/3 md:w-1/2 w-full" data-aos="fade-left" data-aos-duration="1500">
                     <div class="swiper testimonial-swiper">
                         <div class="swiper-wrapper">
 
@@ -550,15 +575,18 @@
         </div>
     </section>
     <section class="pb-[60px]">
-        <div class="swiper video-swiper max-w-[1146px] mx-auto rounded-[20px] overflow-hidden bg-black">
+        <div class="swiper video-swiper max-w-[1146px] mx-auto rounded-[20px] overflow-hidden bg-black w-[90%]"
+            data-aos="fade" data-aos-duration="1500">
             <div class="swiper-wrapper">
                 <div class="swiper-slide ">
-                    <div class="flex items-center justify-center h-[400px] text-white text-[100px]">
+                    <div
+                        class="flex items-center justify-center md:h-[400px] h-[250px] text-white lg:text-[100px] md:text-[50px] text-[30px]">
                         VIDEO
                     </div>
                 </div>
                 <div class="swiper-slide ">
-                    <div class="flex items-center justify-center h-[400px] text-white text-[100px]">
+                    <div
+                        class="flex items-center justify-center md:h-[400px] h-[250px] text-white lg:text-[100px] md:text-[50px] text-[30px]">
                         VIDEO 2
                     </div>
                 </div>
@@ -566,10 +594,9 @@
             <div class="swiper-pagination "></div>
         </div>
     </section>
-
     <section class="bg-[url('./assets/images/contact-bg.png')] bg-cover bg-right py-[60px] border-t border-black">
         <div class="custom-container">
-            <div class="flex-col flex md:gap-[16px] gap-[8px]">
+            <div class="flex-col flex md:gap-[16px] gap-[8px]" data-aos="fade-up" data-aos-duration="1500">
                 <h5 class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold font-raleway  text-black text-center">
                     Your idea deserves more than a template.</h5>
                 <p class="sm:text-lg text-base xl:text-2xl font-raleway  text-black text-center font-medium">Let it meet
@@ -577,8 +604,8 @@
                 <p class="sm:text-lg text-base xl:text-2xl font-raleway  text-black text-center font-medium">Let’s Build
                     Together</p>
             </div>
-            <div
-                class="w-full bg-customBlack md:pt-[30px] py-[20px] md:px-[40px] px-[20px] md:pb-[60px] md:rounded-[40px] rounded-[24px] mt-[40px]">
+            <div class="w-full bg-customBlack md:pt-[30px] py-[20px] md:px-[40px] px-[20px] md:pb-[60px] md:rounded-[40px] rounded-[24px] mt-[40px]"
+                data-aos="fade-up" data-aos-duration="1500">
                 <form class="flex flex-col md:gap-[16px] gap-[12px]">
                     <input name="name" type="text" placeholder="Name"
                         class="w-full bg-transparent border-b border-[#FFFFFFCC] placeholder-[#FFFFFFCC] text-white font-raleway font-medium lg:text-2xl md:text-xl sm:text-lg text-base py-[10px] focus:outline-none" />
@@ -617,12 +644,12 @@
     <footer>
         <div class="bg-customBlack pt-[62px] pb-[78px] overflow-hidden">
             <div class="custom-container">
-                <div class="grid grid-cols-12 xl:gap-[80px] sm:gap-[40px] gap-[20px]">
-                    <div class="lg:col-span-4  col-span-12">
+                <div class="grid grid-cols-12 xl:gap-[80px] sm:gap-[40px] gap-[20px]" >
+                    <div class="lg:col-span-4  col-span-12" data-aos="fade-right" data-aos-duration="1500">
                         <div class="flex flex-col sm:gap-[30px] gap-[20px]">
                             <h6 class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold font-raleway text-white">
                                 Contact Us</h6>
-                            <img src="./assets/images/logo-white.png" alt="Logo Image" class="max-w-[98px] h-auto">
+                            <img src="./assets/images/logo-white.png" alt="Logo Image" class="md:max-w-[98px] max-w-[44px] h-auto">
                             <p class="sm:text-lg text-sm xl:text-2xl text-white font-bold font-raleway">Where tech
                                 means trust.</p>
                             <p class="sm:text-lg text-sm xl:text-2xl text-white font-bold font-raleway">We create
@@ -630,7 +657,7 @@
                                 enterprise systems.</p>
                         </div>
                     </div>
-                    <div class="lg:col-span-8 col-span-12">
+                    <div class="lg:col-span-8 col-span-12" data-aos="fade-left" data-aos-duration="1500">
                         <div class="grid grid-cols-12 sm:gap-[40px] gap-[20px]">
                             <div class="sm:col-span-5 col-span-12">
                                 <h6
@@ -658,13 +685,13 @@
                             <div class="col-span-12">
                                 <div class="border-t border-white sm:pt-[40px] pt-[20px]">
                                     <div class="flex">
-                                        <div class="w-full flex gap-[20px] items-center">
-                                            <img src="./assets/images/instagram.svg" alt="instagram" />
+                                        <div class="w-full flex md:gap-[20px] gap-[12px] items-center">
+                                            <img src="./assets/images/instagram.svg" alt="instagram" class="md:max-w-[60px] max-w-[30px]"/>
                                             <a href="#"
                                                 class="sm:text-lg text-sm xl:text-2xl text-white font-normal font-raleway">Instagram</a>
                                         </div>
-                                        <div class="w-full flex gap-[20px] items-center">
-                                            <img src="./assets/images/linkedin.svg" alt="linkedin" />
+                                        <div class="w-full flex md:gap-[20px] gap-[12px] items-center">
+                                            <img src="./assets/images/linkedin.svg" alt="linkedin" class="md:max-w-[60px] max-w-[24px]"/>
                                             <a href="#"
                                                 class="sm:text-lg text-sm xl:text-2xl text-white font-normal font-raleway">LinkedIn</a>
                                         </div>

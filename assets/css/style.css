@@ -70,13 +70,19 @@ details[open] summary .arrow {
 }
 
 .custom-pl {
-    padding-left: max(calc((100vw - 1200px) / 2), 5%) !important;
+    padding-left: max(calc((100vw - 1220px) / 2), 5%) !important;
 }
 
 @media screen and (max-width: 767px) {
     .testimonial-section .review-content {
         min-height: 300px;
     }
+
+    .video-swiper .swiper-pagination-bullet {
+    height: 16px;
+    width: 16px;
+    margin: 10px 5px !important;
+}
 }
 
 @media screen and (max-width: 620px) {
